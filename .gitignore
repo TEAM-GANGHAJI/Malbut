@@ -1,0 +1,61 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+.env
+
+# IDE settings
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Database
+*.sqlite3
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# Alembic database migration files (if you're using it)
+alembic/versions/*.py
+
+# Exclude all .env files except example.env
+.env*
+!example.env
+
+# Exclude requirements.txt as it might contain sensitive information
+# Uncomment the next line if you want to exclude requirements.txt
+# requirements.txt
+
+# README.md is usually tracked, so we don't exclude it
