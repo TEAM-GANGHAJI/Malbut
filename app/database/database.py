@@ -7,7 +7,12 @@ from common.logging import logger
 # 환경 변수 로드
 load_dotenv()   
 
-database_url = os.getenv("DATABASE_ENDPOINT")
+mode = os.getenv("MODE")
+
+if mode == "dev":
+    database_url = os.getenv("DATABASE_ENDPOINT")
+else:
+    print("Production mode")
 
 metadata = MetaData()
 
