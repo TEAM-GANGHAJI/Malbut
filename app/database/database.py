@@ -2,6 +2,7 @@ import os
 from dotenv import load_dotenv
 from sqlalchemy import MetaData
 from sqlalchemy.ext.asyncio import create_async_engine, async_sessionmaker, AsyncSession
+from common.logging import logger
 
 # 환경 변수 로드
 load_dotenv()   
@@ -32,3 +33,5 @@ async def get_db() -> AsyncSession:
         yield db
     finally:
         await db.close()
+
+logger.info("  Database connection established")

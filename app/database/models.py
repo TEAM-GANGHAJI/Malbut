@@ -14,3 +14,4 @@ class User(Base):
     # email = Column(String(50), unique=True, index=True)
     created_at = Column(DateTime, nullable=True, default=datetime.now(timezone.utc))
     
+    

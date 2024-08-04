@@ -1,8 +1,0 @@
-fastapi
-pydantic
-uvicorn
-sqlalchemy
-databases[aiomysql]
-sqlalchemy-utils
-alembic
-python-dotenv

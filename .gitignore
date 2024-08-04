@@ -49,6 +49,8 @@ coverage.xml
 
 # Alembic database migration files (if you're using it)
 alembic/versions/*.py
+alembic.ini
+migration/
 
 # Exclude all .env files except example.env
 .env*
