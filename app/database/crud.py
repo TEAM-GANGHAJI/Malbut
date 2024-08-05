@@ -16,7 +16,6 @@ ModelType = TypeVar("ModelType", bound=Base)
 CreateSchemaType = TypeVar("CreateSchemaType", bound=BaseModel)
 UpdateSchemaType = TypeVar("UpdateSchemaType", bound=BaseModel)
 
-
 #------------------------------------------------------------------------------------#
 #                                      Class Crud                                                     
 #------------------------------------------------------------------------------------#

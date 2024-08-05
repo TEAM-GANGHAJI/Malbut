@@ -12,9 +12,14 @@ def read_item(item_id: int, q: str = None):
 
 
 from api.user import user_router
-app.include_router(user_router.router, prefix="/users", tags=["user"])
+from api.auth import auth_router
+from api.learning import learning_router
+from api.conversation import conversation_router
 
-
+app.include_router(user_router.router)
+app.include_router(auth_router.router)
+app.include_router(learning_router.router)
+app.include_router(conversation_router.router)
 
 if __name__ == "__main__":
     import uvicorn
