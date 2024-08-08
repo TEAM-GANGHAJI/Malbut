@@ -8,11 +8,11 @@ class UserBase(BaseModel):
         description="사용자의 이름",
         example="홍길동"
     )
-    phone: str = Field(
-        ...,
-        description="사용자의 전화번호",
-        example="010-1234-5678"
-    )
+    # phone: str = Field(
+    #     ...,
+    #     description="사용자의 전화번호",
+    #     example="010-1234-5678"
+    # )
     # email: EmailStr = Field(
     #     ...,
     #     description="사용자의 이메일 주소",

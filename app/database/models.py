@@ -11,7 +11,7 @@ class User(Base):
     id = Column(Integer, autoincrement=True, primary_key=True, index=True)
     username = Column(String(50), index=True)
     user_type = Column(String(10))
-    phone = Column(String(50), unique=True, index=True)
+    #phone = Column(String(50), unique=True, index=True)
     created_at = Column(DateTime, nullable=True, default=datetime.now(timezone.utc))
     
 # class Correction(Base):
